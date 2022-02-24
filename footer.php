@@ -13,6 +13,8 @@
                                 "container_class"=>"site__footer__nav",
                                 "menu_class" => "site__footer__menu__ul",
                                 "link_before"=>$icone)); ?>
+
+                        <?php get_search_form(); ?>
    
    
     </section>

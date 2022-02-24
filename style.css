@@ -1,5 +1,6 @@
 /**
-Theme name: Sacha - Lab5
+Theme name: Sacha - Lab6 - 24-02-22
+
 
 
 */
@@ -508,6 +509,13 @@ COMPOSANTS
   color: aqua;
 }
 
+.site__footer > section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -580,6 +588,12 @@ COMPOSANTS
   height: 30px;
 }
 
+.util {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
 #chk-burger {
   display: none;
 }
@@ -638,6 +652,25 @@ COMPOSANTS
 .erreur__404 h1 {
   font-size: 5rem;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.recherche {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: transparent;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------------------------------------------------------
@@ -708,5 +741,18 @@ ANIMATION
   100% {
     transform: translateY(0);
   }
+}
+
+@keyframes anim_recherche {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.util {
+  animation: anim_recherche 1s ease-in-out backwards;
 }
 /*# sourceMappingURL=style.css.map */

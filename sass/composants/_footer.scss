@@ -30,3 +30,12 @@
 }
 
 }
+
+.site__footer > section {
+
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}

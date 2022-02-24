@@ -72,3 +72,26 @@
 
 }
 
+@keyframes anim_recherche {
+
+    0%{
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+
+
+}
+
+
+
+
+.util {
+
+    animation: anim_recherche 1s ease-in-out backwards;
+    
+}
+
