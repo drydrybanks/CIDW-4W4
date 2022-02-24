@@ -1,0 +1,28 @@
+
+.carte__titre{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #73726e;
+}
+
+.carte__code{
+    font-size: 1rem;
+}
+
+.carte__description{
+    font-size: 0.9rem;
+}
+
+.cours__carte {
+
+    border-radius:0%;
+    transition: border-radius .3s;
+
+    &:hover {
+        border-radius: 10%;
+        transition: border-radius .3s;
+
+        
+    }
+
+}
