@@ -1,5 +1,3 @@
-
-
 #chk-burger {
     display:none;
 }
@@ -19,13 +17,10 @@
     }
 }
 
-
-
 #chk-burger:checked ~ .menu-principal-container {
 
     display:block;
 }
-
 
 .menu-principal-container {
 
@@ -71,3 +66,23 @@
     
 }
 
+#menu-simple {
+
+    justify-content: space-around;
+    
+}
+
+
+
+.menu-principal-container {height: 100%;}
+
+#menu-principal {
+
+    height:100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: space-around;
+
+}

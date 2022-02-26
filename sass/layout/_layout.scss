@@ -50,3 +50,16 @@
 		"footer footer";
 }
 } // fin média desktop
+
+.principal {
+    display: flex;
+
+    flex-flow: column nowrap;
+
+    justify-content: center;
+
+
+    h1 {
+        align-self: center;
+    }
+}
