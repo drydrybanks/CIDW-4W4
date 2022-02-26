@@ -86,3 +86,15 @@
     justify-content: space-around;
 
 }
+
+.menu {
+
+    li {
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}
