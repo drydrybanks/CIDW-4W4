@@ -7,11 +7,14 @@
 <div class="site__footer__colonne">
         <!-- Une list des articles -->
         <section class="footer__article">
-        <h2>Titre 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, assumenda asperiores doloremque deserunt vel itaque temporibus consequatur, sequi nobis quos animi eligendi nisi rerum fugit consectetur accusamus aut esse suscipit!</p>
+
+        <?php get_sidebar('footer_colonne_1'); ?>
+
         </section>
         <!-- L'adresse de l'entreprise -->
         <section class="footer__adresse">
+
+        <?php get_sidebar('footer_colonne_2'); ?>
 
         938373 rue du Fun Noir
         </section>
@@ -42,6 +45,12 @@
         <section class="copyright"></section>
         <!-- Le nom de l'auteur -->
         <section class="footer__auteur"></section>
+
+        <section class="footer__sociaux"></section>
+        
+        <?php get_sidebar('footer_ligne_1'); ?>
+
+        
 
 
 
