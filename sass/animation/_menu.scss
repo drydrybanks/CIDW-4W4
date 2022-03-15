@@ -1,12 +1,26 @@
+$choixMenu: 16;
+
+@for $i from 1 through $choixMenu {
+
+    .menu-principal-container  .menu-item:nth-of-type(#{$i}) {
+
+        animation-delay: .2*$i#{s};
+
+}
+
+
+}
+
+
 .menu-principal-container  .menu-item {
 
 
 animation : animMenu 1s 0s backwards;
 
 
-
-
 }
+
+
 
 
 

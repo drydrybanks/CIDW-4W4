@@ -1,0 +1,48 @@
+$nbCarte: 23;
+
+@for $i from 1 through $nbCarte {
+
+   .cours .cours__carte:nth-of-type(#{$i}) {
+
+        animation-delay: .2*$i#{s};
+
+}
+
+
+}
+
+
+
+
+
+.cours .cours__carte {
+    animation: animCarte 1s 0.5s backwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animCarte {
+    0%{
+        transform:scale(0);
+    }
+
+    95%{
+        transform:scale(1.1);
+
+    }
+
+    100% {
+        transform:scale(1);
+    }
+}
