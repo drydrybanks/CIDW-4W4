@@ -876,4 +876,20 @@ ANIMATION
   font-weight: bold;
   color: black;
 }
+
+.menu-principal-container .menu-item {
+  animation: animMenu 1s 0s backwards;
+}
+
+@keyframes animMenu {
+  0% {
+    transform: translateX(100vw);
+  }
+  90% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 /*# sourceMappingURL=style.css.map */
