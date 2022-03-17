@@ -1,5 +1,5 @@
 $choixMenu: 16;
-
+// Une boucle scss pour incrémenter légèrement le délai des animations
 @for $i from 1 through $choixMenu {
 
     .menu-principal-container  .menu-item:nth-of-type(#{$i}) {
