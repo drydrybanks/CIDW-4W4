@@ -8,13 +8,13 @@
         <!-- Une list des articles -->
         <section class="footer__article">
 
-        <?php get_sidebar('footer_colonne_1'); ?>
+            <?php get_sidebar('footer_colonne_1'); ?>
 
         </section>
         <!-- L'adresse de l'entreprise -->
         <section class="footer__adresse">
 
-        <?php get_sidebar('footer_colonne_2'); ?>
+            <?php get_sidebar('footer_colonne_2'); ?>
 
         
         </section>
@@ -46,9 +46,10 @@
         <!-- Le nom de l'auteur -->
         <section class="footer__auteur"></section>
 
-        <section class="footer__sociaux"></section>
+        <section class="footer__sociaux"><?php get_sidebar('footer_ligne_1'); ?></section>
         
-        <?php get_sidebar('footer_ligne_1'); ?>
+        
+        <?php get_sidebar('footer_ligne_2'); ?>
 
         
 

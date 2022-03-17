@@ -542,6 +542,10 @@ COMPOSANTS
   align-items: center;
 }
 
+.site__footer .footer__sociaux {
+  height: 5vh;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -760,6 +764,12 @@ LAYOUT
   display: flex;
   justify-content: center;
   align-items: stretch;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: stretch;
 }
 
 .site__main {

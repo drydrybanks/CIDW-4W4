@@ -120,6 +120,18 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+
+    register_sidebar(
+        array(
+            'id'            => 'footer_ligne_2',
+            'name'          => __( 'footer_ligne_2' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans une colonne de pied de page ' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
 }
 
 

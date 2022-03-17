@@ -55,6 +55,15 @@
         align-items: stretch;
 
     }
+
+    &__ligne {
+        display:flex;
+
+        flex-flow: column wrap;
+
+        justify-content: stretch;
+        // align-items: stretch;
+    }
 }
 
 
