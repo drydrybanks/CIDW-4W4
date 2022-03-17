@@ -1127,6 +1127,17 @@ ANIMATION
   animation: animCarte 1s 0.5s backwards;
 }
 
+.cours .cours-carte img {
+  transform: translateX(0);
+  transform: scale(1);
+  transition: transform 0.5s 0.5s ease-in-out;
+}
+
+.cours .cours-carte img:hover {
+  transform: translateX(2vw);
+  transform: scale(1.2);
+}
+
 @keyframes animCarte {
   0% {
     transform: scale(0);
