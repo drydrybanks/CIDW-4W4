@@ -28,6 +28,8 @@
             <a href="#">Des options de menus</a>
             <a href="#">Des options de menus</a>
             <a href="#">Des options de menus</a>
+
+            <?php get_sidebar('footer_colonne_3'); ?>
         </section>
 
 
@@ -38,9 +40,9 @@
 <!-- Rangée de lignes -->
     <div class="site__footer__ligne">
         <!-- Description du site -->
-        <section class="description"></section>
+        <section class="description">  <?php get_sidebar('footer_ligne_2'); ?> </section>
         <!-- Le menu du footer -->
-        <section class="footer__nav"></section>
+        <section class="footer__nav">  <?php get_sidebar('footer_ligne_1'); ?> </section>
         <!-- Les droits d'auteurs -->
         <section class="copyright"></section>
         <!-- Le nom de l'auteur -->
@@ -48,9 +50,9 @@
 
         <section class="footer__sociaux"></section>
 
-        <?php get_sidebar('footer_ligne_2'); ?>
+       
 
-        <?php get_sidebar('footer_ligne_1'); ?>
+       
         
         
         

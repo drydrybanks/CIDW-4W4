@@ -11,7 +11,7 @@
 
     add_theme_support("custom-logo", array(
         "height" => 200,
-        "zidth" => 200,
+        "width" => 200,
     ));
 
     }
