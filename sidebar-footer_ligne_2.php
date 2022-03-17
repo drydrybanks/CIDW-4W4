@@ -1,6 +1,6 @@
-<div id="sidebar-footer_colonne_3" class="sidebar">
+<div id="sidebar-footer_ligne_2" class="sidebar">
 
-<?php dynamic_sidebar('footer_colonne_3'); ?>
+<?php dynamic_sidebar('footer_ligne_2'); ?>
 
 
 
