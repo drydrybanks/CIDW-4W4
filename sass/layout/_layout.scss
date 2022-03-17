@@ -99,6 +99,31 @@
 		"sidebar main"
 		"footer footer";
 }
+
+
+.site #burger {
+
+    display:none;
+}
+
+.site .menu-principal-container {
+    display:block;
+}
+
+// ================================================= //
+
+.home #burger {
+    display: block;
+
+}
+
+.home .menu-principal-container {
+    display:none;
+} 
+
+
+
+
 } // fin média desktop
 
 .principal {

@@ -794,6 +794,18 @@ LAYOUT
   .site {
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
+  .site #burger {
+    display: none;
+  }
+  .site .menu-principal-container {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
 }
 
 .principal {
