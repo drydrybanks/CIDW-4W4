@@ -46,7 +46,19 @@
 .site__footer{
     grid-area: footer;
     background-color: $color__colorbackground-footer;
+
+    &__colonne {
+
+        display:flex;
+
+        justify-content: center;
+        align-items: stretch;
+
+    }
 }
+
+
+
 
 .site__main{
     grid-area: main;
@@ -83,7 +95,7 @@
 .principal {
     display: flex;
 
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 
     justify-content: center;
 

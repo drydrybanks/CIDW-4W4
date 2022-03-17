@@ -756,6 +756,12 @@ LAYOUT
   background-color: #66fcf1;
 }
 
+.site__footer__colonne {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
 .site__main {
   grid-area: main;
   background-color: rgba(31, 40, 51, 0.5);
@@ -778,8 +784,12 @@ LAYOUT
 
 .principal {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
+}
+
+.principal p {
+  text-align: center;
 }
 
 .principal h1 {

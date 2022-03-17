@@ -16,7 +16,7 @@
 
         <?php get_sidebar('footer_colonne_2'); ?>
 
-        938373 rue du Fun Noir
+        
         </section>
         <!-- Les liens intéressants -->
         <section class="footer__liens">
@@ -24,10 +24,10 @@
 
         wp_nav_menu(array("menu"=>"externe"));
                                 ?>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#">Des options de menus</a>
+            <a href="#">Des options de menus</a>
+            <a href="#">Des options de menus</a>
+            <a href="#">Des options de menus</a>
         </section>
 
 
