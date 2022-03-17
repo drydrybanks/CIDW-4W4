@@ -46,10 +46,14 @@
         <!-- Le nom de l'auteur -->
         <section class="footer__auteur"></section>
 
-        <section class="footer__sociaux"><?php get_sidebar('footer_ligne_1'); ?></section>
-        
-        
+        <section class="footer__sociaux"></section>
+
         <?php get_sidebar('footer_ligne_2'); ?>
+
+        <?php get_sidebar('footer_ligne_1'); ?>
+        
+        
+        
 
         
 

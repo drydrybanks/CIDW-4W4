@@ -544,6 +544,7 @@ COMPOSANTS
 
 .site__footer .footer__sociaux {
   height: 5vh;
+  width: 100vw;
 }
 
 .site__header {
