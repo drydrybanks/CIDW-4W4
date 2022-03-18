@@ -1,0 +1,19 @@
+@mixin fonts($font_titre, $font_article,$font_menu) {
+
+
+ h2 {font-family: $font_titre ;
+
+ }
+
+
+    
+    p{
+        font-family: $font_article;
+    }
+
+
+    a {
+        font-family: arial;
+    }
+
+}
