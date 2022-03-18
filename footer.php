@@ -1,4 +1,64 @@
 <footer class="site__footer">
+
+
+
+
+<!-- Première rangée de colonnes -->
+<div class="site__footer__colonne">
+        <!-- Une list des articles -->
+        <section class="footer__article">
+
+        <?php get_sidebar('footer_colonne_1'); ?>
+
+        </section>
+        <!-- L'adresse de l'entreprise -->
+        <section class="footer__adresse">
+
+        <?php get_sidebar('footer_colonne_2'); ?>
+
+        938373 rue du Fun Noir
+        </section>
+        <!-- Les liens intéressants -->
+        <section class="footer__liens">
+    <?php 
+
+        wp_nav_menu(array("menu"=>"externe"));
+                                ?>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </section>
+
+
+
+    </div>
+
+
+<!-- Rangée de lignes -->
+    <div class="site__footer__ligne">
+        <!-- Description du site -->
+        <section class="description"></section>
+        <!-- Le menu du footer -->
+        <section class="footer__nav"></section>
+        <!-- Les droits d'auteurs -->
+        <section class="copyright"></section>
+        <!-- Le nom de l'auteur -->
+        <section class="footer__auteur"></section>
+
+        <section class="footer__sociaux"></section>
+        
+        <?php get_sidebar('footer_ligne_1'); ?>
+
+        
+
+
+
+
+    </div>
+
+
+
     <section>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam rerum quaerat repudiandae enim ullam minima, sit perspiciatis fugiat necessitatibus cum voluptate neque blanditiis facere? Aperiam vero excepturi modi a unde!</p>
     
@@ -13,6 +73,8 @@
                                 "container_class"=>"site__footer__nav",
                                 "menu_class" => "site__footer__menu__ul",
                                 "link_before"=>$icone)); ?>
+
+                        <?php get_search_form(); ?>
    
    
     </section>
