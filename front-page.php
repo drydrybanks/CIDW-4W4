@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="principal">
-   <h1>MA PAGE D'ACCUEIL PERSONNALISÉ</h1>
+   <h1></h1>
 
    <SECTION class="animation">
     

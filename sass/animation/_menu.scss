@@ -1,0 +1,45 @@
+$choixMenu: 16;
+// Une boucle scss pour incrémenter légèrement le délai des animations
+@for $i from 1 through $choixMenu {
+
+    .menu-principal-container  .menu-item:nth-of-type(#{$i}) {
+
+        animation-delay: .2*$i#{s};
+
+}
+
+
+}
+
+
+.menu-principal-container  .menu-item {
+
+
+animation : animMenu 1s 0s backwards;
+
+
+}
+
+
+
+
+
+
+
+@keyframes animMenu {
+
+    0% {
+        transform: translateX(100vw);
+    }
+
+
+    90% {
+        transform: translateX(-10vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+
+}

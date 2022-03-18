@@ -17,3 +17,22 @@
     }
 
 }
+
+
+
+@mixin lesFlex($flexColonne, $flexLigne) {
+
+
+     flex-flow: $flexLigne;
+
+     &__menu {
+         flex-flow: $flexColonne;
+     }
+
+}
+
+
+
+@mixin breakpoints($largeur__media-tablette, $largeur__media-desktop) {
+
+}

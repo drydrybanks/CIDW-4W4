@@ -8,15 +8,15 @@
         <!-- Une list des articles -->
         <section class="footer__article">
 
-        <?php get_sidebar('footer_colonne_1'); ?>
+            <?php get_sidebar('footer_colonne_1'); ?>
 
         </section>
         <!-- L'adresse de l'entreprise -->
         <section class="footer__adresse">
 
-        <?php get_sidebar('footer_colonne_2'); ?>
+            <?php get_sidebar('footer_colonne_2'); ?>
 
-        938373 rue du Fun Noir
+        
         </section>
         <!-- Les liens intéressants -->
         <section class="footer__liens">
@@ -24,10 +24,12 @@
 
         wp_nav_menu(array("menu"=>"externe"));
                                 ?>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#">Des options de menus</a>
+            <a href="#">Des options de menus</a>
+            <a href="#">Des options de menus</a>
+            <a href="#">Des options de menus</a>
+
+            <?php get_sidebar('footer_colonne_3'); ?>
         </section>
 
 
@@ -38,17 +40,22 @@
 <!-- Rangée de lignes -->
     <div class="site__footer__ligne">
         <!-- Description du site -->
-        <section class="description"></section>
+        <section class="description">  <?php get_sidebar('footer_ligne_2'); ?> </section>
         <!-- Le menu du footer -->
-        <section class="footer__nav"></section>
+        <section class="footer__nav">  <?php get_sidebar('footer_ligne_1'); ?> </section>
         <!-- Les droits d'auteurs -->
         <section class="copyright"></section>
         <!-- Le nom de l'auteur -->
         <section class="footer__auteur"></section>
 
         <section class="footer__sociaux"></section>
+
+       
+
+       
         
-        <?php get_sidebar('footer_ligne_1'); ?>
+        
+        
 
         
 
@@ -60,7 +67,7 @@
 
 
     <section>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam rerum quaerat repudiandae enim ullam minima, sit perspiciatis fugiat necessitatibus cum voluptate neque blanditiis facere? Aperiam vero excepturi modi a unde!</p>
+        <p> Tout droits réservés TIM 2022. </p>
     
 
         <?php
