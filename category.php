@@ -2,7 +2,7 @@
 <main class="site__main">
     <h2>Liste de cours</h2>
     <?php if(have_posts()): ?>
-        <h1>----CATEGORY-COURS----</h1>
+        <h1>----CATEGORY</h1>
         <section class="cours">
             <?php while(have_posts()): the_post(); ?>
             <article class="cours__carte">

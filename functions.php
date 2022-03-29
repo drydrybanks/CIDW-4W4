@@ -34,8 +34,10 @@
     function cidw_4w4_enregistre_menu() {
         register_nav_menus(array
                         ('principal' => __('Menu principal','cidw_4w4'), 
-                            'footer' => __('Menu pied de page', 'cidw-4w4'),
-                            'footer_colonne' => __('Menu footer colonne', 'cidw-4w4') 
+                            'footer' => __('Menu pied de page', 'cidw_4w4'),
+                            'footer_colonne' => __('Menu footer colonne', 'cidw_4w4'), 
+                            'menu_categorie' => __('Menu catégorie cours', 'cidw-4w4')
+                      
                             ) 
                         );
     }
