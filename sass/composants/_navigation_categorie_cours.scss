@@ -19,5 +19,11 @@
 
 
         }
+
+        &:hover {
+            a{
+                color: $color__colorbackground-footer;
+            }
+        }
     }
 }
