@@ -534,10 +534,6 @@ COMPOSANTS
   display: flex;
 }
 
-.web {
-  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=globe");
-}
-
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
@@ -790,6 +786,32 @@ COMPOSANTS
   margin-left: 0;
   width: 30px;
   height: 30px;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=globe");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=camera");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=cube-transparent");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=pencil");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=videogame_asset");
+}
+
+.cours__carte {
+  background-repeat: no-repeat;
+  background-position: 93% 3%;
+  background-size: 30px;
 }
 
 /* ---------------------------------------------------------
