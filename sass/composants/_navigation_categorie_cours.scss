@@ -12,6 +12,7 @@
             margin:0 15px;
 
             a{
+                color: $color__bouton_color ;
                 padding: 5px;
             }
 
@@ -22,7 +23,7 @@
 
         &:hover {
             a{
-                color: $color__colorbackground-footer;
+                color: $color__bouton_color--hover;  
             }
         }
     }
