@@ -1,0 +1,23 @@
+.menu-categorie_cours-container {       //  nav
+
+
+
+
+    .menu{      // ul
+        display:flex;
+        list-style-type: none;
+
+
+        .menu-item {        // li
+            margin:0 15px;
+
+            a{
+                padding: 5px;
+            }
+
+
+
+
+        }
+    }
+}
