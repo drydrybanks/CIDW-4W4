@@ -11,9 +11,23 @@
         ?>
         <section class="cours">
             <?php while(have_posts()): the_post(); ?>
-            <?php get_the_category() 
+
+
+
+
+            <?php 
+            
+            $categories = get_the_category();
+            
+            
+           
+         //   var_dump()
             //    the_category(); ?>
-            <article class="cours__carte  " >
+
+
+
+
+            <article class="cours__carte <?php echo $categories ?> " >
                 <?php
                     $titre = get_the_title();
                     $titreCourt = substr(get_the_title(), 8);

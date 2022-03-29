@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 Lab-5 Sach
+Theme name: 2022-4w4 Lab-5 Sacha - 03-29
 Author: Sacha-Alexendre Collard-Legault
 Author URI: https://github.com/drydrybanks
 Dwscription : Ce thème sert de base de développement pour l'ensemble du cours 4W4. Chacune 
@@ -401,6 +401,42 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 4vw, 3.5rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+
+h5 {
+  font-size: clamp(0.8rem, 4vw, 2.5rem);
+}
+
+h6 {
+  font-size: clamp(0.7rem, 4vw, 2rem);
+}
+
+h1, h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h3, h4 {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h5, h6 {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTS
 --------------------------------------------------------- */
@@ -715,10 +751,6 @@ COMPOSANTS
 
 .menu-categorie_cours-container .menu .menu-item a {
   padding: 5px;
-}
-
-.menu-categorie_cours-container .menu:hover a {
-  color: #66fcf1;
 }
 
 .erreur__404 h1 {
