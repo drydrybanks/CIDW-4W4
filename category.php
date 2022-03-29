@@ -5,7 +5,8 @@
         <h1>----CATEGORY-------</h1>
 
         <?php wp_nav_menu(array(
-            "menu" => "categorie_menu"
+            "menu" => "categorie_menu",
+            "container" => "nav"
         ));
         ?>
         <section class="cours">
