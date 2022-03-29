@@ -19,6 +19,10 @@
 }
 
 .cours__carte{
+
+    background-repeat: no-repeat;
+    background-position: 93% 3%;
+
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -92,4 +96,8 @@
 
         }
     }
+}
+
+.web {
+    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=globe');
 }

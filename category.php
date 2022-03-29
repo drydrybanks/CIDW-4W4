@@ -27,7 +27,7 @@
 
 
 
-            <article class="cours__carte <?php echo $categories ?> " >
+            <article class="cours__carte <?php echo $categories[1]->slug ?> " >
                 <?php
                     $titre = get_the_title();
                     $titreCourt = substr(get_the_title(), 8);
