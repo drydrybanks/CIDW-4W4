@@ -26,6 +26,9 @@
         array(),
         filemtime(get_template_directory() . '/style.css'),
         false);
+
+        wp_enqueue_style('cidw-4w4-police-google',"https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap", false);
+            
     }
 
     add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
