@@ -11,7 +11,9 @@
         ?>
         <section class="cours">
             <?php while(have_posts()): the_post(); ?>
-            <article class="cours__carte">
+            <?php get_the_category() 
+            //    the_category(); ?>
+            <article class="cours__carte  " >
                 <?php
                     $titre = get_the_title();
                     $titreCourt = substr(get_the_title(), 8);
