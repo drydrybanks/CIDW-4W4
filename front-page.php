@@ -14,6 +14,16 @@
      
 
    </SECTION>
+     <?php 
+     
+     wp_nav_menu(array("menu"=>"menu_accueil",
+                         "container" => "nav"));
+     
+     ?>
+
+
+
+
     <?php if(have_posts()):the_post(); ?>
 
     <?php the_title(); ?>

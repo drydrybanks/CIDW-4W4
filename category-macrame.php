@@ -5,7 +5,7 @@
         -----category-macrame.php----------
     </h1>
 
-    <?php if (have_posts(): while(have_posts())):   ?>
+    <?php if (have_posts()): while(have_posts()):   ?>
 
         <?php the_title(); ?>
         <?php the_content(); ?>
