@@ -3,7 +3,7 @@
     <h2>Liste de cours</h2>
     <?php if(have_posts()): ?>
         <h1>----CATEGORY-------</h1>
-        <?php if (is_category(array('cours','creation-3d','web', 'jeu', 'design', 'utilitaire', 'video'))): ?>
+        <?php ?>
 
         <?php wp_nav_menu(array(
             "menu" => "categorie_menu",
@@ -30,11 +30,17 @@
 
             
 
-            <?php get_template_part('gabarit/content', 'cours');  ?>
+            <?php 
+            
+            if (is_category(array('cours','creation-3d','web', 'jeu', 'design', 'utilitaire', 'video'))): 
+            get_template_part('gabarit/content', 'cours'); 
+            else: 
+            get_template_part('gabarit/content', 'cours'); 
+            endif; //if (is_category('cours)): ?>
             <?php endwhile; ?>
         </section>
     <?php endif; // if (have_posts)?>
-    <?php endif; //if (is_category('cours)): ?>
+   
 
      
 </main>
