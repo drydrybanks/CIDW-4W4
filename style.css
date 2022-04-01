@@ -748,11 +748,41 @@ COMPOSANTS
 }
 
 .menu-categorie_cours-container .menu .menu-item {
-  margin: 0 15px;
+  margin: 0 15px 0 15px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
   padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px white solid;
+  border-radius: 10%;
+  background-color: teal;
+}
+
+menu.menu-categorie_cours > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  background-color: pink;
+  margin: 0 15px 0 15px;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
 }
 
 .erreur__404 h1 {
@@ -825,7 +855,6 @@ LAYOUT
   gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header " " main" "footer";
-  overflow-x: hidden;
 }
 
 .home::after {
