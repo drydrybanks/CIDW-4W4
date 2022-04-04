@@ -170,6 +170,11 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
 // WP_QUERY = requête WpordPress de base pour accéder à ????
 {
 
+    $ordre = get_query_var('ordre');
+
+    $cletri = get_query_var('cletri');
+    echo "-------".$ordre."----".$cletri."------" ;
+
     if(!is_admin() && is_main_query() && is_category(array('cours','web','jeu','creation-3d','design', 'video','utilitaire'))) {
   //  var_dump($query);
  //   die();
