@@ -163,51 +163,58 @@ function my_register_sidebars() {
         )
     );
 }
-/**
- * @param : WP_Query $query
+  /**
+ * Modifie la requête global de WP_query.
+ * 
+ * @param WP_query $query : Objet contenant la requête global.
+ * @return WP_query $query. 
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
-// WP_QUERY = requête WpordPress de base pour accéder à ????
 {
-
-    $ordre = get_query_var('ordre');
-
-    $cletri = get_query_var('cletri');
-    echo "-------".$ordre."----".$cletri."------" ;
-
-    if(!is_admin() && is_main_query() && is_category(array('cours','web','jeu','creation-3d','design', 'video','utilitaire'))) {
-  //  var_dump($query);
- //   die();
-
-    $query->set('posts_per_page', -1);
-
-    $query->set('orderby', 'title');
-
-    $query->set('order',  'ASC');
+    if (is_admin() 
+        || !is_main_query() 
+        || !is_category(array('cours','web','jeu','design','utilitaire','creation-3d','video'))   )
+    {
+        return $query;
+    }        
+    else
+    {
+        $ordre = get_query_var('ordre');
+        $cle = get_query_var('cletri');       
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
+        /*
+        $query->set('order',  'asc');
+        $query->set('orderby', 'title');
+        */
+        $query->set('postperpage','-1');
+        return $query;
+    }
 }
 
-//   if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
-//     {
-//     //$ordre = get_query_var('ordre');
-//     $query->set('posts_per_page', -1);
-//     // $query->set('orderby', $cle);
-//     $query->set('orderby', 'title');
-//     // $query->set('order',  $ordre);
-//     $query->set('order',  'ASC');
-//     // var_dump($query);
-//     // die();
-//   }
-}
+
+
 function cidw_4w4_query_vars($params){
+// var_dump($params);
+// die();
+    $params[] = "ordre";
+    $params[] = "cletri";
+return $params;
+
+}
+/*
     $params[] = "cletri";
     $params[] = "ordre";
     //$params["cletri"] = "title";
     //var_dump($params); die();
     return $params;
 }
+*/
 add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
-//
+/* 
+Que le hook «pre_get_posts» se manisfeste juste avant que la requête WP_query soit exécuté. 
+Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête 
+*/ 
 
-//add_filter('query_vars', 'cidw_4w4_query_vars' );
-
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 ?>
