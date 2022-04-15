@@ -1,36 +1,71 @@
-.menu-menu_accueil-container {
+.menu-accueil-container,
+.menu-evenement-container { // nav
 
-    .menu {
-        display:flex;
+    .menu { // ul
+
+        display : flex;
+        justify-content: space-around;
+        align-items: center;
+        .accueil__cours .menu-item-icone{//li
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
+        }
+        .accueil__prof .menu-item-icone{ // li
+        }
+        .accueil__aide .menu-item-icone{ //li
+        }
+
+        .accueil__etudiant .menu-item-icone{ //li
+
+        }
 
 
-        .menu-item {
-            // INSERT COLOR HERE
-            background-color: pink;
-            margin: 0 15px 0 15px;
+        .menu-item { // li
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color__colorbackground-footer;
+            //width: 20%;
+            flex : 0 0 15%;
+            height : 200px;
 
+            border-radius :0%;
+            transition: border-radius 0.5s;
 
-            a {
-
-                  // INSERT COLOR HERE
-
-                font-size: clamp(1rem, 2vw, 2rem);
-                text-decoration: none;
-
-                width:100%;
-
-                .menu-item-description {
-                    font-size: 1rem;
-                }
-
+            &:hover{
+                border-radius: 5%;
             }
 
+            
+
+            a{
+                display : flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: clamp(1rem, 2vw, 2.2rem);
+                color: $color__bouton__color;
+                height : 100%;
+
+                
+                .menu-item-description { // span
+                    font-size: clamp(.8rem, 1.5vw, 1rem);
+
+                }
+                .menu-item-icone{
+                    border : 1px solid #aaa;
+                    width : 2rem;
+                    height : 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    margin-top : auto;
+                }
+
+  
+            }
         }
 
 
     }
 
-
-
-
-}
+} 

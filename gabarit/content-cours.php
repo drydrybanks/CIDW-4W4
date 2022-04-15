@@ -6,7 +6,8 @@
 
                     $posDebutHeures = strrpos($titre, '(') + 1;
                     $posFinHeures = strrpos($titre, ')');
-                    $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
+                    // $ = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
+                    $nbHeures = get_field("nombre_dheures");
                 ?>
 
                 <?php the_post_thumbnail('medium'); ?> 

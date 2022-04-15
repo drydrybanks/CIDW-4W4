@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="principal">
-   <h1></h1>
+   
 
    <SECTION class="animation">
     
@@ -14,9 +14,17 @@
      
 
    </SECTION>
+   <h1>Activités en TIM</h1>
      <?php 
      
      wp_nav_menu(array("menu"=>"menu_accueil",
+                         "container" => "nav"));
+     
+     ?>
+     <h1>Les évènements important pour l'année</h1>
+      <?php 
+     
+     wp_nav_menu(array("menu"=>"evenement",
                          "container" => "nav"));
      
      ?>

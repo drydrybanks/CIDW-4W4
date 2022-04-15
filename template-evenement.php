@@ -1,18 +1,32 @@
-<?php /* Template Name : Évènement */ ?>
 <?php
-
-get_header();
+/**
+* Template Name: Évenement
+*
+* @package WordPress
+* @subpackage cidw_4w4
+*/
 ?>
 
-<main class="site__main"> 
-    <h1>-----PAGE.PHP-------</h1> 
-    <?php if (have_posts()):the_post(); ?>
+<?php get_header() ?>
+<main class="site__main">
+    <h1>---- Template evenement ------</h1>
+   <?php if (have_posts()): the_post(); ?>
+       <h1> <?php the_title() ?> </h1>
+     <!-- Le titre de la page -->
+     <section class="evenement__resume">
 
-    <?php the_title(); ?>
-    <?php the_content(); ?>
+     <?php the_field('resume'); ?>
 
-    <?php endif; ?>
-    
+     </section>
+     <p class="evenement__endroit">
+     <?php the_field('endroit') ?>
+
+     </p>
+     
+
+
+
+        <?php the_content() ?>        
+   <?php endif ?>
 </main>
-
-<?php get_footer(); ?>
+<?php get_footer() ?>
