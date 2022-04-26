@@ -32,7 +32,14 @@ La méthode add_control (new WP_Customize_Color_Control($manager, le nom de la v
 
 // Add action est un hook qui permet d'initialiser la fonction 
 
-add_action('customiza_register', function(WP_Customizer_Manager $manager){});
+add_action('customiza_register', function(WP_Customizer_Manager $manager){
+
+$manager->add_section();
+$manager->add_setting();
+$manager->add_control();
+
+
+});
 
 
 
