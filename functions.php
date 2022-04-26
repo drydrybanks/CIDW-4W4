@@ -1,5 +1,8 @@
 <?php
 
+
+require_once("options/apparences.php");
+
     function cidw_4w4_add_theme_support(){
 
 
@@ -29,6 +32,12 @@
 
         wp_enqueue_style('cidw-4w4-police-google',"https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap", false);
             
+
+        wp_enqueue_script('cidw-4w4-js-modale',
+        get_template_directory_uri() .'/javascript/boite_modale.js',
+        array(),'1.0.0',
+        filemtime(get_template_directory() . '/javascript/boite_modale.js'),
+        true );
     }
 
     add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");

@@ -1,10 +1,10 @@
 /**
-Theme name: 2022-4w4 Ex3 - Sacha - 04-14
+Theme name: 2022-4w4 Lab-6 - Sacha
 Author: Sacha-Alexendre Collard-Legault
 Author URI: https://github.com/drydrybanks
 Dwscription : Ce thème sert de base de développement pour l'ensemble du cours 4W4. Chacune 
 des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: cidw-4w4
@@ -42,6 +42,7 @@ COMPOSANTS
 @import "composants/404";
 @import "composants/recherche";
 @import "composants/contenu";
+@import "composants/boite-modale";
 
 /* ---------------------------------------------------------
 LAYOUT

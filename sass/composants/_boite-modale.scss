@@ -1,0 +1,36 @@
+.boite__modale {
+
+    position:fixed;
+
+    border : 5px black solid;
+
+    background-color: #aaa;
+
+    width:50%;
+    height:50%;
+    
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+
+    top:25%;
+    left:25%;
+
+    
+
+    
+   &__ouvrir{
+        transform: scale(1);
+   }
+
+   
+
+    &__ferme{
+        
+        color:red;
+
+        
+       
+    }
+
+    &__texte{}
+}

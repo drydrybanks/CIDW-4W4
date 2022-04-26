@@ -1,8 +1,5 @@
 <footer class="site__footer">
 
-
-
-
 <!-- Première rangée de colonnes -->
 <div class="site__footer__colonne">
         <!-- Une list des articles -->
@@ -15,8 +12,7 @@
         <section class="footer__adresse">
 
             <?php get_sidebar('footer_colonne_2'); ?>
-
-        
+       
         </section>
         <!-- Les liens intéressants -->
         <section class="footer__liens">
@@ -32,10 +28,7 @@
             <?php get_sidebar('footer_colonne_3'); ?>
         </section>
 
-
-
     </div>
-
 
 <!-- Rangée de lignes -->
     <div class="site__footer__ligne">
@@ -50,31 +43,16 @@
 
         <section class="footer__sociaux"></section>
 
-       
-
-       
-        
-        
-        
-
-        
-
-
-
-
     </div>
 
-
-
     <section>
+
         <p> Tout droits réservés TIM 2022. </p>
     
-
         <?php
         
         $icone = '<svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#f00"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>';
-        
-        
+                
         wp_nav_menu(array("menu"=>"simple", 
                                 "container" => "nav",
                                 "container_class"=>"site__footer__nav",
@@ -83,7 +61,26 @@
 
                         <?php get_search_form(); ?>
    
-   
-    </section>
-    ­<?php wp_footer(); ?>
+                        </section>
+
+</div>
+
 </footer>
+
+<div class="boite__modale">
+
+
+    <button class="boite__modale__ferme">X</button>
+
+    <article class="boite__modale__texte">
+
+    </article>
+    </div>
+
+</body>
+
+
+
+<?php wp_footer();?>
+
+</html>
