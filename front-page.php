@@ -17,7 +17,7 @@
    <h1>Activités en TIM</h1>
      <?php 
      
-     wp_nav_menu(array("menu"=>"menu_accueil",
+     wp_nav_menu(array("menu"=>"departement",
                          "container" => "nav"));
      
      ?>
