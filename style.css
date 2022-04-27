@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 Lab-6 - Sacha
+Theme name: 2022-4w4 Exercice 4 - Sacha Alex Collard Legault
 Author: Sacha-Alexendre Collard-Legault
 Author URI: https://github.com/drydrybanks
 Dwscription : Ce thème sert de base de développement pour l'ensemble du cours 4W4. Chacune 
@@ -777,6 +777,13 @@ menu.menu-categorie_cours > ul > li {
 
 .menu-accueil-container .menu,
 .menu-evenement-container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-accueil-container .menu-departement,
+.menu-evenement-container .menu-departement {
   display: flex;
   justify-content: space-around;
   align-items: center;

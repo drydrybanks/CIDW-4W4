@@ -6,6 +6,19 @@
         display : flex;
         justify-content: space-around;
         align-items: center;
+
+
+        &-departement {
+
+
+
+            display : flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+
         .accueil__cours .menu-item-icone{//li
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
         }
