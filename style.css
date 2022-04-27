@@ -776,26 +776,22 @@ menu.menu-categorie_cours > ul > li {
 }
 
 .menu-accueil-container .menu,
-.menu-evenement-container .menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.menu-accueil-container .menu-departement,
-.menu-evenement-container .menu-departement {
+.menu-evenement-container .menu,
+.menu-departement-container .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone,
-.menu-evenement-container .menu .accueil__cours .menu-item-icone {
+.menu-evenement-container .menu .accueil__cours .menu-item-icone,
+.menu-departement-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
 
 .menu-accueil-container .menu .menu-item,
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-departement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -808,12 +804,14 @@ menu.menu-categorie_cours > ul > li {
 }
 
 .menu-accueil-container .menu .menu-item:hover,
-.menu-evenement-container .menu .menu-item:hover {
+.menu-evenement-container .menu .menu-item:hover,
+.menu-departement-container .menu .menu-item:hover {
   border-radius: 5%;
 }
 
 .menu-accueil-container .menu .menu-item a,
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-departement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -823,12 +821,14 @@ menu.menu-categorie_cours > ul > li {
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
-.menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-evenement-container .menu .menu-item a .menu-item-description,
+.menu-departement-container .menu .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
-.menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-evenement-container .menu .menu-item a .menu-item-icone,
+.menu-departement-container .menu .menu-item a .menu-item-icone {
   border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;

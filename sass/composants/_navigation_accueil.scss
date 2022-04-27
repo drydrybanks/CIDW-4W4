@@ -1,5 +1,6 @@
 .menu-accueil-container,
-.menu-evenement-container { // nav
+.menu-evenement-container,
+.menu-departement-container { // nav
 
     .menu { // ul
 
@@ -8,14 +9,7 @@
         align-items: center;
 
 
-        &-departement {
-
-
-
-            display : flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+  
 
 
 
@@ -23,11 +17,17 @@
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
         }
         .accueil__prof .menu-item-icone{ // li
+
+
         }
         .accueil__aide .menu-item-icone{ //li
+
+
         }
 
         .accueil__etudiant .menu-item-icone{ //li
+
+
 
         }
 
