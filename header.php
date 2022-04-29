@@ -30,7 +30,12 @@
 </header>
 <section class="site__barre">
     <input type="checkbox" id="chk-burger">
-    <label for="chk-burger" id="burger"><svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000000"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label>
+    <label for="chk-burger" id="burger" class="burger">
+        <!--Les 3 lignes de nos menus burger -->
+        
+        <div class="burger__ligne"></div>
+        <div class="burger__ligne"></div>
+        <div class="burger__ligne"></div>
     <?php
 
     $icone_menu = '<svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#1A9FAD"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zm8 0a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z"></path></svg>';

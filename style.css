@@ -671,13 +671,8 @@ COMPOSANTS
   display: none;
 }
 
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
-}
-
 #burger {
   position: absolute;
-  transition: transform .3s;
 }
 
 @media screen and (min-width: 500px) {
@@ -1331,5 +1326,18 @@ ANIMATION
   100% {
     transform: scale(1);
   }
+}
+
+.burger {
+  width: 10rem;
+  height: 10rem;
+  background-color: black;
+}
+
+.burger .burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,13 +4,13 @@
 
 #chk-burger:checked ~ #burger {
 
-    transform: rotate(90deg);
+   // transform: rotate(90deg);
 
 }
 
 #burger {
     position: absolute;
-    transition:transform .3s;
+  //  transition:transform .3s;
 
     @media screen and (min-width: $largeur__media-tablette) {
         display:none;
