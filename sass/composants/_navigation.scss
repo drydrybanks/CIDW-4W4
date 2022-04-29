@@ -19,14 +19,18 @@
 
 #chk-burger:checked ~ .menu-principal-container {
 
-    display:block;
+   display:block;
+
+  //  transform:translateX(0);
 }
 
 .menu-principal-container {
 
     padding: 20px 0 0 0;
+
+   // transform:translateX(-100%);
   
-    display:none;
+   display:none;
 
    
 

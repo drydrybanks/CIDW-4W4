@@ -1329,9 +1329,12 @@ ANIMATION
 }
 
 .burger {
-  width: 10rem;
-  height: 10rem;
+  margin: 10px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 25%;
   background-color: black;
+  overflow: hidden;
 }
 
 .burger .burger__ligne {
@@ -1339,7 +1342,7 @@ ANIMATION
   width: 100%;
   height: 100%;
   background-color: white;
-  transition: all 1s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .burger .burger__ligne:nth-of-type(1) {
@@ -1354,15 +1357,15 @@ ANIMATION
   clip-path: polygon(0% 80%, 100% 80%, 100% 100%, 0% 100%);
 }
 
-.burger:hover .burger__ligne:nth-of-type(1) {
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(1) {
   clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
 }
 
-.burger:hover .burger__ligne:nth-of-type(2) {
-  opacity: 0;
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
 }
 
-.burger:hover .burger__ligne:nth-of-type(3) {
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 /*# sourceMappingURL=style.css.map */
