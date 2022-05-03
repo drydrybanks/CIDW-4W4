@@ -47,7 +47,7 @@ require_once("options/apparences.php");
         filemtime(get_template_directory() . '/javascript/caroussel.js'),
         true );
 
-        if(is_category('cours')) {
+        if(is_category('cours','wev','design', 'creation-3d', 'jeux', 'video', 'utilitaire')) {
        
             wp_enqueue_script('cidw-4w4-boite-modale');
                 

@@ -916,6 +916,18 @@ menu.menu-categorie_cours > ul > li {
   color: red;
 }
 
+.galerie {
+  width: 100%;
+  object-fit: scale-down;
+}
+
+@media screen and (min-width: 500px) {
+  .galerie {
+    width: 75%;
+    object-fit: scale-down;
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
