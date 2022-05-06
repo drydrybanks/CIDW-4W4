@@ -41,15 +41,9 @@
  
  //  Désactivé pour laisser place à l'image  
  //  let cours__desc__suite = document.querySelectorAll('.cours__desc__suite');
- 
-   
- 
- 
      boite__carroussel__ferme.addEventListener('mousedown', function() {
- 
  
          boite__carroussel.classList.remove('boite__carroussel__ouvrir');
  
-     })
-     
+     })  
      })()
