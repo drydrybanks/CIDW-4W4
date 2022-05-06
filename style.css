@@ -948,6 +948,19 @@ menu.menu-categorie_cours > ul > li {
   justify-content: center;
   width: 100%;
   border: 1px solid red;
+  z-index: 1;
+}
+
+.boite__carroussel__navigation button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.boite__carroussel__navigation button:focus {
+  background-color: black;
 }
 
 .boite__modale {

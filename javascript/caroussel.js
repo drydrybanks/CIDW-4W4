@@ -13,11 +13,20 @@
     // Dans l'article de la boite modale, on ajoute la balsie IMG
     boite__carroussel.appendChild(elmImg);
 
+    let index= 0;
+
     // On parcours chacune des images (img) de la galerie    
     for(const img of galerie__img) {
 
         let bouton = document.createElement('button');
+        bouton.dataset.index = index++
+        // ++index incremente avant de placer la variable index
+        // index++ incremente apres avoir placer la variable index
         boite__carroussel__navigation.append(bouton);
+
+        bouton.addEventListener('mousedown', function() {
+            elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
+        })
 
         img.addEventListener('mousedown', function() {
             console.log(this.tagName)
