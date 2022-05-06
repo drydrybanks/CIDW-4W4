@@ -12,5 +12,8 @@
    @media screen and (min-width : $largeur__media-tablette) {
        width:75%;
        object-fit: scale-down;
+
+       flex-flow:row;
+       
    }
 }
