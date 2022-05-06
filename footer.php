@@ -77,6 +77,16 @@
     </article>
     </div>
 
+    <div class="boite__carroussel">
+
+
+    <button class="boite__carroussel__ferme">X</button>
+
+    <section class="boite__carroussel__navigation">
+
+</section>
+    </div>
+
 </body>
 
 
