@@ -47,6 +47,17 @@
     img {
         object-fit: cover;
     }
+
+    &__navigation {
+        // position absolu dans le la section attitré
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        justify-content: center;
+        width:100%;
+
+    }
 }
 
 .boite__modale {
