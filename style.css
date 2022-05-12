@@ -926,19 +926,46 @@ menu.menu-categorie_cours > ul > li {
 }
 
 .boite__carroussel {
-  width: 75%;
-  height: 75%;
-  top: 12.5%;
-  left: 12.5%;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  overflow: hidden;
 }
 
-.boite__carroussel img {
+@media screen and (min-width: 500px) {
+  .boite__carroussel {
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+  }
+}
+
+.boite__carroussel__img {
   position: absolute;
   object-fit: cover;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.boite__carroussel__img img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.boite__carroussel__img img.img--ouvrir {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .boite__carroussel__navigation {
@@ -951,7 +978,7 @@ menu.menu-categorie_cours > ul > li {
   z-index: 1;
 }
 
-.boite__carroussel__navigation button {
+.boite__carroussel__navigation .bouton {
   width: 40px;
   height: 20px;
   border-radius: 100%;
@@ -959,7 +986,7 @@ menu.menu-categorie_cours > ul > li {
   padding: 10px;
 }
 
-.boite__carroussel__navigation button:focus {
+.boite__carroussel__navigation .bouton:focus {
   background-color: black;
 }
 

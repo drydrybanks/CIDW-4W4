@@ -82,9 +82,8 @@
 
     <button class="boite__carroussel__ferme">X</button>
 
-    <section class="boite__carroussel__navigation">
-
-</section>
+    <section class="boite__carroussel__navigation"></section>
+    <section class="boite__carroussel__img"></section>
     </div>
 
 </body>
