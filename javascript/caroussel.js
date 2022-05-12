@@ -53,8 +53,11 @@
 
         bouton.addEventListener('mousedown', function() {
            // elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
+           boite__carroussel__img.children[0].classList.remove('img--ouvrir')
+           boite__carroussel__img.children[1].classList.remove('img--ouvrir')
+           boite__carroussel__img.children[2].classList.remove('img--ouvrir')
            boite__carroussel__img.children[this.dataset.index].classList.add('img--ouvrir')
-           boite__carroussel__img.children[this.dataset.index].classList.remove('img--ouvrir')
+           
         })
 
         img.addEventListener('mousedown', function() {
