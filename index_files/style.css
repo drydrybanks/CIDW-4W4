@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 TP2-05-12 - Sacha Alex Collard Legault
+Theme name: 2022-4w4 TP2-0429 - Sacha Alex Collard Legault
 Author: Sacha-Alexendre Collard-Legault
 Author URI: https://github.com/drydrybanks
 Dwscription : Ce thème sert de base de développement pour l'ensemble du cours 4W4. Chacune 
@@ -952,7 +952,7 @@ menu.menu-categorie_cours > ul > li {
 }
 
 .boite__carroussel__navigation button {
-  width: 40px;
+  width: 20px;
   height: 20px;
   border-radius: 100%;
   margin: 10px;
