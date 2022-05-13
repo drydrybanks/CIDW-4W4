@@ -3,17 +3,7 @@
 <!-- Première rangée de colonnes -->
 <div class="site__footer__colonne">
         <!-- Une list des articles -->
-        <section class="footer__article">
-
-            <?php get_sidebar('footer_colonne_1'); ?>
-
-        </section>
-        <!-- L'adresse de l'entreprise -->
-        <section class="footer__adresse">
-
-            <?php get_sidebar('footer_colonne_2'); ?>
-       
-        </section>
+        
         <!-- Les liens intéressants -->
         <section class="footer__liens">
     <?php 
@@ -37,7 +27,7 @@
         <!-- Le menu du footer -->
         <section class="footer__nav">  <?php get_sidebar('footer_ligne_1'); ?> </section>
         <!-- Les droits d'auteurs -->
-        <section class="copyright"></section>
+        <section class="copyright"><p> Tout droits réservés TIM 2022. </p></section>
         <!-- Le nom de l'auteur -->
         <section class="footer__auteur"></section>
 
@@ -47,7 +37,7 @@
 
     <section>
 
-        <p> Tout droits réservés TIM 2022. </p>
+        
     
         <?php
         
@@ -64,7 +54,7 @@
                         </section>
 
 </div>
-
+<?php wp_footer();?>
 </footer>
 
 <div class="boite__modale">
@@ -90,6 +80,6 @@
 
 
 
-<?php wp_footer();?>
+
 
 </html>

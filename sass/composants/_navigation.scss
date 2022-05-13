@@ -63,13 +63,14 @@
     
     a {
 
-        transition:background-color .3s;
+        transition:all .3s;
 
         display:block;
         padding:3px;
 
         text-decoration: none;
         &:hover {
+            border-radius: 25%;
             background-color: $color__colorbackground-footer;
         }
     } 
