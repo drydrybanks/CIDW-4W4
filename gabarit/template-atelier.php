@@ -10,8 +10,9 @@
 
 <?php get_header() ?>
 <main class="site__main">
-    <h1>---- Template evenement ------</h1>
+    <h1>---- Template atelier ----- </h1>
    <?php if (have_posts()): the_post(); ?>
+   <div class="conteneur__atelier">
        <h1> <?php the_title() ?> </h1>
      <!-- Le titre de la page -->
      <section class="atelier_description">
@@ -60,6 +61,8 @@
     </p>
 
 </section>
+
+</div>
      
 
 
