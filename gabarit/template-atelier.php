@@ -16,47 +16,48 @@
        <h1> <?php the_title() ?> </h1>
      <!-- Le titre de la page -->
      <section class="atelier_description">
-
+    <h6>Description</h6>
      <?php the_field('description'); ?>
 
      </section>
-     <h3 class="animateur">
-     <?php the_field('animateur') ?>
+     <p class="animateur">
+     Cet atelier est donné par :<?php the_field('animateur') ?>
 
-</h3>
+</p>
 <section class="date__lieu">
+    
     <p class="date__debut">
-    <?php the_field('date_debut') ?>
+    Cet atelier débute le :<?php the_field('date_debut') ?>
 
     </p>
 
     <p class="date__fin">
-    <?php the_field('date_fin') ?>
+    Et termine le :<?php the_field('date_fin') ?>
 
     </p>
 
     <p class="jours">
-    <?php the_field('jours_semaine') ?>
+    Cet atelier à lieu les :<?php the_field('jours_semaine') ?>
 
     </p>
 
     <p class="heure__debut">
-    <?php the_field('heure_debut') ?>
+    De :<?php the_field('heure_debut') ?>
 
     </p>
 
     <p class="heure__fin">
-    <?php the_field('heure_fin') ?>
+    Jusqu'à<?php the_field('heure_fin') ?>
 
     </p>
 
     <p class="duree">
-    <?php the_field('duree') ?>
+    Pour une durée de : <?php the_field('duree') ?>
 
     </p>
 
     <p class="local">
-    <?php the_field('local') ?>
+    Dans le local :  <?php the_field('local') ?>
 
     </p>
 
