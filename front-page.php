@@ -28,6 +28,11 @@
                          "container" => "nav"));
      
      ?>
+     <h1>Les ateliers de la session d'automne</h1>
+     <?php 
+          wp_nav_menu(array("menu"=>"atelier",
+          "container" => "nav"));
+     ?>
 
 
 
