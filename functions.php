@@ -65,7 +65,9 @@ require_once("options/apparences.php");
                         ('principal' => __('Menu principal','cidw_4w4'), 
                             'footer' => __('Menu pied de page', 'cidw_4w4'),
                             'footer_colonne' => __('Menu footer colonne', 'cidw_4w4'), 
-                            'menu_categorie' => __('Menu catégorie cours', 'cidw-4w4')
+                            'menu_categorie' => __('Menu catégorie cours', 'cidw-4w4'),
+                            'departement' => __('Menu departement', 'cidw-4w4'),
+                            'atelier' => __('Menu atelier', 'cidw-4w4')
                       
                             ) 
                         );
