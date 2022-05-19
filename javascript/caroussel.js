@@ -13,8 +13,8 @@
     console.log(galerie__img.length)
 
     let image = document.createElement('img');
-    image.classList.add('boite__carroussel__img')
-    boite__carroussel.appendChild(image)
+    image.classList.add('boite__carroussel__img');
+    boite__carroussel.appendChild(image);
 
     // Création d'un élément img
     //let elmImg = document.createElement('img');
