@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 Épreuve Finale - 05-19 - Sacha Alex Collard Legault
+Theme name: 2022-4w4 - Remise - Épreuve Finale - 05-19 - Sacha Alex Collard Legault
 Author: Sacha-Alexendre Collard-Legault
-Author URI: https://github.com/drydrybanks
+Author URI: https://github.com/drydrybanks/CIDW-4W4/tree/epreuve-finale
 Dwscription : Ce thème sert de base de développement pour l'ensemble du cours 4W4. Chacune 
 des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.2
@@ -1029,18 +1029,59 @@ menu.menu-categorie_cours > ul > li {
 
 .html__css {
   background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  transition: all .5s;
+  transform: translateY(0);
 }
 
 .intro__git {
   background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  transition: all .5s;
 }
 
 .intro__react {
   background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  transition: all .5s;
 }
 
 .css__avance {
   background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  transition: background-position-y .5s;
+  transition: background-position-x .5s;
+}
+
+.css__avance:hover {
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.intro__react:hover {
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.html__css:hover {
+  transform: translateY(5%);
+}
+
+.champs {
+  font-size: 1.5em;
+  font-style: italic;
 }
 
 /* ---------------------------------------------------------

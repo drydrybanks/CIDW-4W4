@@ -15,18 +15,92 @@
 
 .html__css {
     background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+    background-size: 30px;
+
+    background-repeat: no-repeat;
+
+    
+    background-position-x: center;
+    background-position-y: bottom;
+
+    transition: all .5s;
+
+    
+    transform: translateY(0);
+
+   
 }
 
 .intro__git {
     background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+
+    background-size: 30px;
+
+    background-repeat: no-repeat;
+
+    
+    background-position-x: center;
+    background-position-y: bottom;
+
+    transition: all .5s;
+
 }
 
 .intro__react {
     background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+
+    background-size: 30px;
+
+    background-repeat: no-repeat;
+
+    
+    background-position-x: center;
+    background-position-y: bottom;
+
+    transition: all .5s;
 }
 
 .css__avance {
     background-image: url('https://s2.svgbox.net/files.svg?ic=css');
+
+    background-size: 30px;
+
+    background-repeat: no-repeat;
+
+    
+    background-position-x: center;
+    background-position-y: bottom;
+
+    transition: background-position-y .5s;
+    transition: background-position-x .5s;
+    
+}
+
+.intro__git:hover {
+    
+}
+
+.css__avance:hover {
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.intro__react:hover {
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.html__css:hover {
+    transform:translateY(5%);
+}
+
+
+
+.champs {
+    font-size: 1.5em;
+   font-style: italic;
+
+    
 }
 
 
