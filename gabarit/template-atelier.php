@@ -14,15 +14,52 @@
    <?php if (have_posts()): the_post(); ?>
        <h1> <?php the_title() ?> </h1>
      <!-- Le titre de la page -->
-     <section class="evenement__resume">
+     <section class="atelier_description">
 
-     <?php the_field('resume'); ?>
+     <?php the_field('description'); ?>
 
      </section>
-     <p class="evenement__endroit">
-     <?php the_field('endroit') ?>
+     <h3 class="animateur">
+     <?php the_field('animateur') ?>
 
-     </p>
+</h3>
+<section class="date__lieu">
+    <p class="date__debut">
+    <?php the_field('date_debut') ?>
+
+    </p>
+
+    <p class="date__fin">
+    <?php the_field('date_fin') ?>
+
+    </p>
+
+    <p class="jours">
+    <?php the_field('jours_semaine') ?>
+
+    </p>
+
+    <p class="heure__debut">
+    <?php the_field('heure_debut') ?>
+
+    </p>
+
+    <p class="heure__fin">
+    <?php the_field('heure_fin') ?>
+
+    </p>
+
+    <p class="duree">
+    <?php the_field('duree') ?>
+
+    </p>
+
+    <p class="local">
+    <?php the_field('local') ?>
+
+    </p>
+
+</section>
      
 
 
